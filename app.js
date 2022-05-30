@@ -18,8 +18,8 @@ hesaplaBtn.addEventListener("click", (e)=>{
    }
    const faiz = oran / 100;
    taksit =
-     (tutar.value * (faiz * (1 + faiz) ** vade.value)) /
-     ((1 + faiz) ** vade.value - 1);
+     ((tutar.value * (faiz * (1 + faiz) ** vade.value)) /
+     ((1 + faiz) ** vade.value - 1)).toFixed(2);
      console.log(taksit);
      sonuçlariGöster();
 });
